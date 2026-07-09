@@ -1,0 +1,7 @@
+Uber Technologies Inc.
+Date: 2026-07-05
+Trip: Airport to Downtown
+Fare: $23.50
+Tip: $4.00
+Total: $27.50
+Currency: USD
