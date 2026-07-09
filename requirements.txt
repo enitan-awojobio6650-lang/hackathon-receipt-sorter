@@ -1,0 +1,8 @@
+crewai>=1.15.2
+crewai-tools>=0.12.0
+litellm>=1.50.0
+python-dotenv>=1.0.0
+gradio>=4.44.0
+pdfplumber>=0.11.0
+pytesseract>=0.3.10
+pillow>=10.0.0
