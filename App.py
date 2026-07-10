@@ -5,6 +5,8 @@ Usage:
     uv run app.py
 """
 
+import os
+
 import gradio as gr
 from dotenv import load_dotenv
 from main import run_expense_report
@@ -30,4 +32,4 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
