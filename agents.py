@@ -6,7 +6,7 @@ from tools import read_receipt_file
 load_dotenv()
 
 llm = LLM(
-    model=os.getenv("MODEL_NAME", "openrouter/poolside/laguna-m.1:free"),
+    model=os.getenv("MODEL_NAME", "openrouter/tencent/hy3:free"),
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
