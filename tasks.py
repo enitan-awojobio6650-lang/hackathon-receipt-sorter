@@ -19,7 +19,7 @@ extract_task = Task(
 categorize_task = Task(
     description=(
         "Using the extracted receipt data, assign it to ONE category from: "
-        "Travel, Meals, Office Supplies, Software, Lodging, Other. "
+        "Travel, Meals, Office Supplies, Software, Lodging, Other,clothes,baby items,grocery,furniture,devices. "
         "Return the original JSON with an added 'category' field."
     ),
     expected_output="The receipt JSON with an added 'category' field.",

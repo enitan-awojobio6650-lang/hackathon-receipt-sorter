@@ -44,7 +44,10 @@ def read_receipt_file(file_path: str) -> str:
             pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
         image = Image.open(file_path)
-        return pytesseract.image_to_string(image).strip() or "No text detected in image."
+        extracted = pytesseract.image_to_string(image).strip() or "No text detected in image."
+
+        print(f"[OCR RAW OUTPUT]\n{extracted}\n[END OCR OUTPUT]") 
+        return extracted or "No text detected in image."
         
     else:
         return f"Unsupported file type: {ext}"
