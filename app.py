@@ -29,6 +29,11 @@ demo = gr.Interface(
     outputs=gr.Markdown(label="Generated Expense Report"),
     title="Expense Report Agent",
     description="Upload a receipt and let the agent crew extract, categorize, and summarize it.",
+    demo = gr.Interface(
+    title="🧾 Expense Report Agent",
+    description="Upload a receipt and let the agent crew extract, categorize, and summarize it.",
+    theme=gr.themes.Soft(primary_hue="orange"),
+)
 )
 
 if __name__ == "__main__":
